@@ -2,25 +2,25 @@
   <nav class="main-nav">
     <ul>
       <li>
-        <a href="/consulting">Consulting</a>
+        <nuxt-link to="/consulting">Consulting</nuxt-link>
       </li>
       <li>
-        <a href="/development">Development</a>
+        <nuxt-link to="/development">Development</nuxt-link>
       </li>
       <li>
-        <a href="/training">Training</a>
+        <nuxt-link to="/training">Training</nuxt-link>
       </li>
       <li>
-        <a href="/speaking">Speaking</a>
+        <nuxt-link to="/speaking">Speaking</nuxt-link>
       </li>
       <li>
-        <a href="/about">About</a>
+        <nuxt-link to="/about">About</nuxt-link>
       </li>
       <li>
-        <a href="/blog">Blog</a>
+        <nuxt-link to="/blog">Blog</nuxt-link>
       </li>
       <li>
-        <a href="/contact">Contact</a>
+        <nuxt-link to="/contact">Contact</nuxt-link>
       </li>
     </ul>
   </nav>
