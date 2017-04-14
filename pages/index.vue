@@ -1,49 +1,24 @@
 <template>
   <section>
     <hero/>
-    <section class="section">
-      <div class="columns">
-        <div class="column is-one-third">
-          <div class="card">
-            <header class="card-header">
-              <h2 class="card-header-title">Consulting</h2>
-            </header>
-            <div class="card-content">
-              Consulting services...
-            </div>
-          </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="card">
-            <header class="card-header">
-              <h2 class="card-header-title">Development</h2>
-            </header>
-            <div class="card-content">
-              Development services...
-            </div>
-          </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="card">
-            <header class="card-header">
-              <h2 class="card-header-title">Training</h2>
-            </header>
-            <div class="card-content">
-              Training services...
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="columns">
+      <vk-tile contentType="consulting"></vk-tile>
+      <vk-tile contentType="development"></vk-tile>
+    </section>
+    <section class="columns">
+      <vk-tile contentType="training"></vk-tile>
     </section>
   </section>
 </template>
 
 <script>
-import Hero from '~components/Hero';
+import Hero from '../components/Hero';
+import Tile from '../components/Tile';
 
 export default {
   components: {
-    Hero
+    Hero,
+    Tile
   }
 };
 </script>
