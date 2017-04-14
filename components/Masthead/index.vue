@@ -8,9 +8,51 @@
         Front End Consulting, Development, and Training
       </div>
     </div>
-    <navigation/>
+    <navigation :links=navLinks />
   </div>
 </template>
 
-<script src="./masthead.js"></script>
+<script>
+import Navigation from '../Navigation';
+
+const navLinks = [
+  {
+    to: '/consulting',
+    text: 'Consulting'
+  },
+  {
+    to: '/development',
+    text: 'Development'
+  },
+  {
+    to: '/training',
+    text: 'Training'
+  },
+  {
+    to: '/speaking',
+    text: 'Speaking'
+  },
+  {
+    to: '/about',
+    text: 'About'
+  },
+  {
+    to: '/blog',
+    text: 'Blog'
+  },
+  {
+    to: '/contact',
+    text: 'Contact'
+  }
+];
+
+export default {
+  components: {
+    Navigation
+  },
+  data: () => ({
+    navLinks
+  })
+};
+</script>
 <style src="./masthead.scss"></style>
